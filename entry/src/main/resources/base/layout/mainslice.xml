@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:height="200vp"
+        ohos:width="200vp"
+        ohos:scale_mode="zoom_center"
+        ohos:layout_alignment="center"
+        ohos:image_src="$media:enemy"
+        ></Image>
+
+    <Image
+        ohos:top_margin="30vp"
+        ohos:height="200vp"
+        ohos:id="$+id:enemy"
+        ohos:width="200vp"
+        ohos:scale_mode="zoom_center"
+        ohos:layout_alignment="center"
+        ohos:image_src="$media:bu"
+        ></Image>
+
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:margin="20vp"
+        ohos:layout_alignment="center"
+        >
+
+        <Button
+            ohos:id="$+id:bu"
+            ohos:height="40vp"
+            ohos:width="80vp"
+            ohos:text="布"
+            ohos:margin="10vp"
+            ohos:text_size="27fp"
+            ohos:background_element="$graphic:capsule_button_element"
+            ></Button>
+        <Button
+            ohos:id="$+id:jiandao"
+            ohos:right_of="$id:bu"
+            ohos:height="40vp"
+            ohos:width="80vp"
+            ohos:background_element="$graphic:capsule_button_element"
+            ohos:text="剪刀"
+            ohos:text_size="27fp"
+            ohos:margin="10vp"
+            ></Button>
+        <Button
+
+            ohos:id="$+id:shitou"
+            ohos:right_of="$id:jiandao"
+            ohos:margin="10vp"
+            ohos:height="40vp"
+            ohos:width="80vp"
+            ohos:text="石头"
+            ohos:text_size="27fp"
+            ohos:background_element="$graphic:capsule_button_element"
+            ></Button>
+
+
+
+
+    </DependentLayout>
+
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:left_margin="145vp">
+
+        <Text
+            ohos:id="$+id:pp"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="27fp"
+            ohos:text="得分:"></Text>
+
+        <Text
+            ohos:id="$+id:defen"
+            ohos:right_of="$id:pp"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text_size="27fp"
+            ohos:text="0"></Text>
+
+    </DependentLayout>
+
+
+
+
+
+
+
+</DirectionalLayout>
